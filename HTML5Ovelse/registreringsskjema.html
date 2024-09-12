@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+<body>
+    <main>
+        <form>
+            <label>
+                1. Navn:
+                <input type="text" name="navn" placeholder="Milad Miladmann.." id="navn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+            </label>
+            <label>
+                2. E-Post:
+                <input type="email" placeholder="eksempel@hiof.no" id="email" required>
+            </label>
+            <label>
+                3. Passord:
+                <input type="password" id="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </label>
+            <label>
+                4. Alder:
+                <input type="number" id="number" min="18" max="99" required>
+            </label>
+            <label>
+                5. Telefonnummer:
+                <input type="tel" id="tel" pattern="[0-9]{8,12}" required>
+            </label>
+            <label>
+                6. Fødselsdato:
+                <input type="date" id="date" max="2024-09-12" required>
+            </label>
+            <label>
+                7. Kjønn:
+                Mann
+                <input type="radio" id="radio-sex" name="valg" required>
+            </label>
+                <label>
+                    Kvinne
+                <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="valg" required>
+                </label>
+            <label>
+                8. Land:
+                <select name="countries">
+                <option value="Norway">Norge</option>
+                <option value="Sweden">Sverige</option>
+                <option value="Denmark">Danmark</option>
+                </select>
+            </label>
+            <label>
+                9. Personvern:
+                <input type="checkbox" required>
+            </label>
+            <label>
+                <input type="submit" value="Send inn skjema">
+            </label>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>Kontakt meg på epost: <a href="mailto:miladg@hiof.no">E-post</a></p>
+        <h4>Copy 2024 Milad</h4>
+    </footer>
+</body>
+</html>
