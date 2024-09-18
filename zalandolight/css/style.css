@@ -37,6 +37,10 @@ img{
 
 .flex-space-b form label {
     visibility: hidden;
+    position: absolute;
+}
+#form {
+    position: relative;
 }
 
 #outlet {
