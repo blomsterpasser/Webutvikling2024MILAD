@@ -35,6 +35,10 @@ img{
     gap: 1rem;
 }
 
+.flex-space-b form{
+    position: relative;
+}
+
 .flex-space-b form label {
     visibility: hidden;
     position: absolute;
